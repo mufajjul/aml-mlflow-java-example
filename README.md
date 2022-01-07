@@ -1,5 +1,6 @@
 # azuremlflow-java
-A simple Java example using the MLflow tracking client with the Azure ML tracking server
+A simple Java example using the MLflow tracking client with the Azure ML tracking server.  This example uses the IRIS dataset, and popular DeepLearning4J to run the experiment in Azure ML. 
+
 
 !NOTE Make sure you have Admin permission for the AzureML workspace you are run your java application
 
