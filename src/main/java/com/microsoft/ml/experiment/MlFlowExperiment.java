@@ -1,3 +1,11 @@
+/**
+ * 
+ * Author(s):  Mufy, Abe
+ * 
+ * Date: 7/1/2022
+ */
+
+
 package com.microsoft.ml.experiment;
 
 import java.io.File;
@@ -191,10 +199,6 @@ public class MlFlowExperiment {
 		mlflowClient.setTerminated(runId);
 
 	}
-	
-	
-	
-	
 	
 
 	public int getBatchSize() {
