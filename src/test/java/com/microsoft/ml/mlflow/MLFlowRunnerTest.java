@@ -7,6 +7,11 @@ import org.nd4j.linalg.io.Assert;
 
 import com.microsoft.aml.auth.AMLAuthentication;
 
+/**
+ * This is a test class for Authentication
+ * @author Mufy, Abe
+ * @Date 7/1/2022
+ */
 public class MLFlowRunnerTest {
 
 	AMLAuthentication amlAuth;
@@ -20,11 +25,8 @@ public class MLFlowRunnerTest {
 	public void testMLFlowRunner() throws Exception {
 
 		MLFLowRunner mlFLowRunner = new MLFLowRunner(amlAuth);
-
 		MlflowClient mlflowClient = mlFLowRunner.getMlflowAuthClient();
 
 		Assert.notNull(mlflowClient);
-
 	}
-
 }

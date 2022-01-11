@@ -1,11 +1,3 @@
-/**
- * 
- * Author(s):  Mufy, Abe
- * 
- * Date: 7/1/2022
- */
-
-
 package com.microsoft.aml.auth;
 
 import java.util.concurrent.ExecutorService;
@@ -20,6 +12,11 @@ import com.microsoft.aad.adal4j.AuthenticationResult;
 import com.microsoft.aad.adal4j.ClientCredential;
 import com.microsoft.ml.experiment.MlFlowExperiment;
 
+/**
+ * This class is used to authenticate with AD and retrieve access token to be used with MlFLow
+ * @author Mufy, Abe
+ * @Date 7/1/2022
+ */
 public class AMLAuthentication {
 
 	private static AMLAuthentication amlAuth;
@@ -27,7 +24,6 @@ public class AMLAuthentication {
 	private static final Logger log = LoggerFactory.getLogger(AMLAuthentication.class);
 
 	private AMLAuthentication() {
-
 	}
 
 	private final String TARGET_RESOURCE = "https://management.core.windows.net/";
@@ -50,12 +46,16 @@ public class AMLAuthentication {
 		if (amlAuth == null) {
 
 			amlAuth = new AMLAuthentication();
-
 		}
 
 		return amlAuth;
 	}
 
+	/**
+	 * This method returns the access token
+	 * @return String
+	 * @throws Exception
+	 */
 	public String getAccessTokenFromUserCredentials() throws Exception {
 
 		log.info("details: " + AUTHORITY + TARGET_RESOURCE + CLIENT_ID);
