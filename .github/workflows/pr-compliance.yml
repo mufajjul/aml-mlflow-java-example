@@ -9,7 +9,7 @@ permissions:
   pull-requests: write
 
 jobs:
-  manual_deploy:
+  pr-compliance:
       runs-on: ubuntu-latest
       steps:
         - uses: mtfoley/pr-compliance-action@main
