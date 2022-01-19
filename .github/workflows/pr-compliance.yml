@@ -9,12 +9,12 @@ permissions:
   pull-requests: write
 
 jobs:
-  pr-compliance:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: mtfoley/pr-compliance-action@main
-        with:
-          # all inputs are optional
-          watch-files: |
-            package.json
-            npm-shrinkwrap.json
+  manual_deploy:
+      runs-on: ubuntu-latest
+      steps:
+        - uses: mtfoley/pr-compliance-action@main
+          with:
+            # all inputs are optional
+            watch-files: |
+              package.json
+              npm-shrinkwrap.json
