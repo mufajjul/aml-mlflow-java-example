@@ -1,7 +1,7 @@
 # azuremlflow-java
 A simple Java example using the MLflow tracking client with the Azure ML tracking server.  
 
-It uses the IRIS dataset, and popular DeepLearning4J [https://deeplearning4j.konduit.ai/]  to run a mult-class classification experiment in Azure ML.  The model registry and telemetry are tracked in AML using MLFlow.  This example has beed develoed and tested using JAVA 11. 
+It uses the IRIS dataset, and popular DeepLearning4J [https://deeplearning4j.konduit.ai/]  to run a mult-class classification experiment in Azure ML.  The model registry and telemetry are tracked in AML using MLflow.  This example has beed develoed and tested using JAVA 11. 
 
 
 !NOTE Make sure you have Admin permission for the AzureML workspace you are run your java application
